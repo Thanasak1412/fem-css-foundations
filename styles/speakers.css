@@ -1,0 +1,64 @@
+@import url(./base.css);
+
+.header__logo,
+.nav__list--item a,
+.main__heading .main__content--title {
+  color: var(--color-text-secondary);
+}
+
+.shopping-cart g path,
+.hamburger-menu path,
+.close g path {
+  fill: var(--color-text-secondary);
+}
+
+.main__content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main__content {
+  flex-basis: 40%;
+  color: var(--color-text-default);
+  margin-top: 7.75rem;
+}
+
+.main__content img {
+  width: 19.375rem;
+  height: 19.375rem;
+  object-position: top;
+}
+
+.main__content--title {
+  font-size: 2rem;
+  line-height: 2.375rem;
+
+  margin: 2.25rem 0 1.25rem;
+}
+
+.main__content--sub-title {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.main__content--detail {
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+}
+
+@media (max-width: 768px) {
+  .nav__list--item a {
+    color: var(--color-secondary);
+  }
+
+  .main__heading {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  .main__content {
+    flex-basis: 100%;
+  }
+}
